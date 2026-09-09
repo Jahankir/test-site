@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     SEO: primary tags — EDIT the name, title, and description below
+     to match the real person and target keywords.
+     ============================================================ -->
+<title>Nadia Ferris — Product Designer & Front-End Developer</title>
+<meta name="description" content="Portfolio of Nadia Ferris, a product designer and front-end developer based in Chennai, building interfaces for startups and design teams.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.example.com/">
+
+<!-- Open Graph (Facebook, LinkedIn, Slack previews) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nadia Ferris — Product Designer & Front-End Developer">
+<meta property="og:description" content="Portfolio of Nadia Ferris, a product designer and front-end developer based in Chennai, building interfaces for startups and design teams.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://www.example.com/og-image.jpg">
+<meta property="og:site_name" content="Nadia Ferris">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nadia Ferris — Product Designer & Front-End Developer">
+<meta name="twitter:description" content="Portfolio of Nadia Ferris, a product designer and front-end developer based in Chennai.">
+<meta name="twitter:image" content="https://www.example.com/og-image.jpg">
+
+<!-- Structured data: helps Google understand who this site belongs to -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nadia Ferris",
+  "url": "https://www.example.com/",
+  "jobTitle": "Product Designer & Front-End Developer",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chennai",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://github.com/example",
+    "https://www.linkedin.com/in/example"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper: #EFEAE1;
+    --ink: #221F1B;
+    --ink-soft: #55504A;
+    --teal: #2F5D62;
+    --clay: #8C5A3C;
+    --rule: rgba(34,31,27,0.16);
+  }
+
+  *{ box-sizing: border-box; }
+
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin:0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3{
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  a{ color: var(--teal); }
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--teal);
+    outline-offset: 3px;
+  }
+
+  .wrap{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header.hero{
+    padding: 96px 0 64px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .eyebrow{
+    color: var(--clay);
+    font-size: 15px;
+    margin: 0 0 18px;
+  }
+
+  h1{
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.15;
+    max-width: 14ch;
+  }
+
+  .lede{
+    margin: 28px 0 0;
+    max-width: 52ch;
+    font-size: 19px;
+    color: var(--ink-soft);
+  }
+
+  nav.contact-links{
+    margin-top: 36px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  nav.contact-links a{
+    text-decoration: none;
+    border-bottom: 1px solid var(--teal);
+    padding-bottom: 2px;
+  }
+
+  section{
+    padding: 64px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section:last-of-type{ border-bottom: none; }
+
+  section > h2{
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  section > p.section-lede{
+    color: var(--ink-soft);
+    max-width: 56ch;
+    margin: 0 0 40px;
+  }
+
+  .project{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 20px;
+    padding: 28px 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .project:first-child{ border-top: none; }
+
+  .project time{
+    color: var(--ink-soft);
+    font-size: 15px;
+    padding-top: 4px;
+  }
+
+  .project h3{
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+
+  .project p{
+    margin: 0 0 10px;
+    color: var(--ink-soft);
+    max-width: 58ch;
+  }
+
+  .project a{
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--teal);
+  }
+
+  .about p{
+    max-width: 60ch;
+    color: var(--ink-soft);
+  }
+
+  .about p + p{ margin-top: 18px; }
+
+  footer{
+    padding: 48px 0 80px;
+  }
+
+  footer p{
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+
+  @media (max-width: 520px){
+    .project{ grid-template-columns: 1fr; gap: 6px; }
+    header.hero{ padding: 64px 0 48px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+  }
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Nadia Ferris</p>
+    <h1>Interfaces should earn their keep, not their compliments.</h1>
+    <p class="lede">
+      I'm a product designer and front-end developer in Chennai. I spend most
+      of my time turning rough product ideas into interfaces that hold up
+      under real use — for early-stage teams who need design and code to move
+      at the same pace.
+    </p>
+    <nav class="contact-links" aria-label="Contact">
+      <a href="mailto:hello@example.com">hello@example.com</a>
+      <a href="https://github.com/example">GitHub</a>
+      <a href="https://www.linkedin.com/in/example">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="work" aria-labelledby="work-heading">
+    <div class="wrap">
+      <h2 id="work-heading">Selected work</h2>
+      <p class="section-lede">A few projects worth walking through.</p>
+
+      <article class="project">
+        <time datetime="2025">2025</time>
+        <div>
+          <h3>Ledger, a billing dashboard for small studios</h3>
+          <p>
+            Rebuilt an invoicing tool's dashboard from a spreadsheet-like
+            table into a reconciled view of what's owed, overdue, and paid —
+            cutting the average time to close a month from four days to one.
+          </p>
+          <a href="#">Read the case study</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <time datetime="2024">2024</time>
+        <div>
+          <h3>Fieldnote, a research repository</h3>
+          <p>
+            Designed and built a searchable home for user-research clips and
+            quotes, so a twelve-person product team could find prior
+            interviews without pinging whoever ran them.
+          </p>
+          <a href="#">Read the case study</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <time datetime="2023">2023</time>
+        <div>
+          <h3>Component library for a healthcare startup</h3>
+          <p>
+            Took a Figma file with four inconsistent button styles and turned
+            it into a shared, accessible component set adopted across three
+            product squads.
+          </p>
+          <a href="#">Read the case study</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-heading">
+    <div class="wrap">
+      <h2 id="about-heading">About</h2>
+      <p>
+        I've spent the last six years moving between design and front-end
+        engineering, usually landing wherever a product team is missing
+        someone who can do both. That's meant early motion design work,
+        a stretch building a component system, and most recently, designing
+        and shipping product features end to end.
+      </p>
+      <p>
+        Outside of client work, I write short notes on design systems and
+        occasionally speak at local meetups.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Nadia Ferris. Built by hand, no framework required.</p>
+  </div>
+</footer>
+
+</body>
+</html>
